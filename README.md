@@ -2,17 +2,12 @@
 Take String s1, String s2. (Consider all letters in lowercase)
 If all characters in S1 are present in S2, remove the repetitive characters & find the weight of the String s2 (ASCII values).
 If all characters in S1 are not present in S2, find the weight of the String s2 (ASCII values) without removing the duplicates.
-Example 1: 
+ Example 1: 
 (s1: mam, s2: madam)
 	All characters in s1 are present in s2. hence remove the repetitive characters (mam) from s2(madam) --> da would be remained. Now, find the weight of da.
 Example 2: 
 (s1: sir, s2: america)
-	All characters in s1 aren't present in s1. hence weight will be calculated without removing duplicates --> weight of america needs to be calculated.
-	
-	
-	
-	
-	
+	All characters in s1 aren't present in s1. hence weight will be calculated without removing duplicates --> weight of america needs to be calculated.	
 	
 	Question 2: Removing vowels basis length of String
 Input: String s1.
