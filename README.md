@@ -1,4 +1,4 @@
-Question 1: Remove Repetitive and find the weight
+    Question 1: Remove Repetitive and find the weight
 Take String s1, String s2. (Consider all letters in lowercase)
 If all characters in S1 are present in S2, remove the repetitive characters & find the weight of the String s2 (ASCII values).
 If all characters in S1 are not present in S2, find the weight of the String s2 (ASCII values) without removing the duplicates.
