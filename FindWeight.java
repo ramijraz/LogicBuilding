@@ -29,11 +29,41 @@ public class FindWeight {
 	    }
 	    
 	    if(count_match==len_s1) {
-	    	weight=len_s2-len_s1;
-	    }else {
-	    	weight=len_s2;
+	    	
+	    	for(int j=0;j<len_s2;j++) {
+	    		for(int i=0;i<len_s1;i++) {
+	    			if(s1.charAt(i)==s2.charAt(j)) {
+	    				s2=s2.replace(s2.charAt(j), '1');
+	    			}
+	    		}
+	    	}
+	    	String s3=s2.replaceAll("1", "");
+	    	//System.out.println(s3);
+	    	
+	    	for(int i=0;i<s3.length();i++) {
+	    		char letter=s3.charAt(i);
+	    		if(letter>=65 && letter<=90) {
+	    			weight+=letter-64; 
+	    		}
+	    		else if(letter<=122 && letter>=97) {
+	    			weight+=letter-96;
+	    		}
+	    	}
 	    }
-	    System.out.println("After Removing Repetitive String the weight is= "+weight);
+	    
+	    
+	    else {
+	    	for(int i=0;i<len_s2;i++) {
+	    		char letter=s2.charAt(i);
+	    		if(letter>=65 && letter<=90) {
+	    			weight+=letter-64;
+	    		}
+	    		else if(letter<=122 && letter>=97) {
+	    			weight+=letter-96;
+	    		}
+	    	}
+	    }
+	    System.out.println("After Removing the Repetitive String the weight is = "+weight);
 	}
 
 }
