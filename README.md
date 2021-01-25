@@ -39,3 +39,39 @@ Output: “pjp”
     Check for vowels @ odd indices.
     No vowels at odd indices.
     return the String as it is--> pjp
+    
+    
+    
+    
+    	Question 3: Return a new String basis Armstrong Number
+Input: input1: int, input2: String.
+    Check if the given number is an armstrong number.
+    Armstrong number: A number is called Armstrong number if it is equal to the sum of cubes of its digits. Consider 0, 1, 153, 370, 371, etc., as Armstrong numbers.
+For Ex: 153 is called as Armstrong number because the cubes of digits 1, 5, 3 ((1*1*1) + (5*5*5) + (3*3*3)) gives us 153
+    If it is an Armstrong number, 
+        Remove the duplicates (characters occurring more than once) from input2,
+        Find difference of the digits in the given number.
+        Return the concatenated (String after removing duplicates + difference in digits) String.
+    If it is not an Armstrong number,
+        Remove the duplicates (characters occurring more than once) from input2,
+        Find sum of the digits in the given number.
+        Return the concatenated (String after removing duplicates + sum of digits) String.
+		
+		
+		
+		Example 1:
+    input1: 153 input2: jaya
+    Output: “jy1”
+    153 is armstrong number
+    remove duplicates occurring more than once (a will be removed)
+    diff in digits: 5-3-1 = 1
+    result: jy1
+Example 2:
+    input1: 111 input2: bhanuchandra
+    Output: “bucdr3”
+    111 is not an armstrong number
+    remove duplicates occuring more than once (a, h, n will be removed)
+    sum of digits: 1+1+1 = 3
+    result: bucdr3
+
+
