@@ -1,8 +1,9 @@
-    Question 1: Remove Repetitive and find the weight
+	Question 1: Remove Repetitive and find the weight
 Take String s1, String s2. (Consider all letters in lowercase)
 If all characters in S1 are present in S2, remove the repetitive characters & find the weight of the String s2 (ASCII values).
 If all characters in S1 are not present in S2, find the weight of the String s2 (ASCII values) without removing the duplicates.
- Example 1: 
+		  
+	Example 1: 
 (s1: mam, s2: madam)
 	All characters in s1 are present in s2. hence remove the repetitive characters (mam) from s2(madam) --> da would be remained. Now, find the weight of da.
 Example 2: 
@@ -17,7 +18,8 @@ If the length of s1 is even, check for vowels (a, e, i, o, u) @ even indices.
 If the length of s1 is odd, check for vowels @ odd indices.
         If found, remove the vowels @odd indices & return the String
         If not found, return the String.
-Example 1: 
+	
+	Example 1: 
 Input : "Sahithi"
 Output: “Shthi”
     Length = 7 which is odd
@@ -25,23 +27,21 @@ Output: “Shthi”
     a, i are vowels @odd indices.
     remove a, i & return the String --> Shthi
 
-Example 2:  
+	Example 2:  
 Input: "Priyas"
 Output: “Prys”
     Length = 6 which is even
     Check for vowels @ even indices.
     i, a are at even indices.
     remove i, a & return the String --> Prys
-Example 3: 
+
+	Example 3: 
 Input: "pjp"
 Output: “pjp”
     Length = 3 which is odd
     Check for vowels @ odd indices.
     No vowels at odd indices.
     return the String as it is--> pjp
-    
-    
-    
     
     	Question 3: Return a new String basis Armstrong Number
 Input: input1: int, input2: String.
@@ -57,16 +57,15 @@ For Ex: 153 is called as Armstrong number because the cubes of digits 1, 5, 3 ((
         Find sum of the digits in the given number.
         Return the concatenated (String after removing duplicates + sum of digits) String.
 		
-		
-		
-		Example 1:
+	Example 1:
     input1: 153 input2: jaya
     Output: “jy1”
     153 is armstrong number
     remove duplicates occurring more than once (a will be removed)
     diff in digits: 5-3-1 = 1
     result: jy1
-Example 2:
+    
+	Example 2:
     input1: 111 input2: bhanuchandra
     Output: “bucdr3”
     111 is not an armstrong number
@@ -88,10 +87,7 @@ Assumption:
 2. String can have both lowercase & uppercase alphabets.
 Once, the weight is taken, calculate the total sum of all the digits of the number until we get a single digit number.
 
-
-
-
-Example 1: 
+	Example 1: 
 input1: Sahithi, input2: ihtihaS
 Output: 1
 1st character in s1 matches with last character in s2
@@ -102,7 +98,8 @@ Sum of 1234567 is: 28
 2+8 = 10
 10 is not a single digit. Hence, continue the count.
 1+0 = 1
-Example 2: 
+
+	Example 2: 
 input1: Sahithi, input2: ihtihas
 Output: 9
 1st character in s1 doesn't match with last character in s2
@@ -112,7 +109,7 @@ Sum of 0234567 is: 27
 28 is not a single digit. Hence, continue the count.
 2+7 = 9
 
-Example 3:
+	Example 3:
 input1: abcd, input2: bcda
 output: 4
 1st character in s1 matches with last character in s2
