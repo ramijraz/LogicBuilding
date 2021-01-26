@@ -73,5 +73,58 @@ Example 2:
     remove duplicates occuring more than once (a, h, n will be removed)
     sum of digits: 1+1+1 = 3
     result: bucdr3
+    
+    
+    Question 4: Finding weight by comparing 2 Strings
+1. Input:
+    input1: String s1, input2: String s2.
+If the 1st  character in s1, matches with last character in s2, consider the w8 of character as 1
+                            else consider the w8 of character as 0
+If the 2nd  character in s1, matches with the preceding last character in s2, consider the w8 of character as 2
+else consider the w8 of character as 0
+Continue the same with all the succeeding characters in S1 with preceding characters in S2.
+Assumption: 
+1. Consider that length of S1 will always be same as length of S2.
+2. String can have both lowercase & uppercase alphabets.
+Once, the weight is taken, calculate the total sum of all the digits of the number until we get a single digit number.
+
+
+
+
+Example 1: 
+input1: Sahithi, input2: ihtihaS
+Output: 1
+1st character in s1 matches with last character in s2
+so w8 of 1st character is 1
+In the same way, all characters are matching. Hence, final string would be: 1234567
+Sum of 1234567 is: 28
+28 is not a single digit. Hence, continue the count.
+2+8 = 10
+10 is not a single digit. Hence, continue the count.
+1+0 = 1
+Example 2: 
+input1: Sahithi, input2: ihtihas
+Output: 9
+1st character in s1 doesn't match with last character in s2
+so w8 of 1st character is 0
+All other characters are matching. Hence, final string would be: 1234567
+Sum of 0234567 is: 27
+28 is not a single digit. Hence, continue the count.
+2+7 = 9
+
+Example 3:
+input1: abcd, input2: bcda
+output: 4
+1st character in s1 matches with last character in s2
+so w8 of 1st character is 1
+2nd succeeding character in S1 doesn't matching with last preceding character in s2
+so w8 of 2nd character is 0
+3rd succeeding character in S1 matches with next preceding character in s2
+so w8 of 3rd character is 3
+4th character in S1 doesn't matching with first character in s2
+so w8 is 0
+Final String would be 1030
+Sum: 1+0+3+0 is: 4
+
 
 
