@@ -4,10 +4,11 @@ If all characters in S1 are present in S2, remove the repetitive characters & fi
 If all characters in S1 are not present in S2, find the weight of the String s2 (ASCII values) without removing the duplicates.
 		  
 	Example 1: 
-(s1: mam, s2: madam)
-	All characters in s1 are present in s2. hence remove the repetitive characters (mam) from s2(madam) --> da would be remained. Now, find the weight of da.
-Example 2: 
-(s1: sir, s2: america)
+   (s1: mam, s2: madam)
+     All characters in s1 are present in s2. hence remove the repetitive characters (mam) from s2(madam) --> da would be remained. Now, find the weight of da.
+   
+        Example 2: 
+  (s1: sir, s2: america)
 	All characters in s1 aren't present in s1. hence weight will be calculated without removing duplicates --> weight of america needs to be calculated.	
 	
 	Question 2: Removing vowels basis length of String
@@ -28,16 +29,16 @@ Output: “Shthi”
     remove a, i & return the String --> Shthi
 
 	Example 2:  
-Input: "Priyas"
-Output: “Prys”
+  Input: "Priyas"
+    Output: “Prys”
     Length = 6 which is even
     Check for vowels @ even indices.
     i, a are at even indices.
     remove i, a & return the String --> Prys
 
 	Example 3: 
-Input: "pjp"
-Output: “pjp”
+   Input: "pjp"
+    Output: “pjp”
     Length = 3 which is odd
     Check for vowels @ odd indices.
     No vowels at odd indices.
@@ -58,7 +59,7 @@ For Ex: 153 is called as Armstrong number because the cubes of digits 1, 5, 3 ((
         Return the concatenated (String after removing duplicates + sum of digits) String.
 		
 	Example 1:
-    input1: 153 input2: jaya
+   input1: 153 input2: jaya
     Output: “jy1”
     153 is armstrong number
     remove duplicates occurring more than once (a will be removed)
@@ -66,7 +67,7 @@ For Ex: 153 is called as Armstrong number because the cubes of digits 1, 5, 3 ((
     result: jy1
     
 	Example 2:
-    input1: 111 input2: bhanuchandra
+   input1: 111 input2: bhanuchandra
     Output: “bucdr3”
     111 is not an armstrong number
     remove duplicates occuring more than once (a, h, n will be removed)
@@ -74,7 +75,8 @@ For Ex: 153 is called as Armstrong number because the cubes of digits 1, 5, 3 ((
     result: bucdr3
     
     
-    Question 4: Finding weight by comparing 2 Strings
+    
+    	Question 4: Finding weight by comparing 2 Strings
 1. Input:
     input1: String s1, input2: String s2.
 If the 1st  character in s1, matches with last character in s2, consider the w8 of character as 1
